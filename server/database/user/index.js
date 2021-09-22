@@ -6,6 +6,9 @@ const UserSchema = new Mongoose.Schema({
     password: {type:String},
     address:[{detail:{type: String}, for:{type: String}}],
     phoneNumber:[{type:Number}],
+},
+{
+  timestamps: true,
 });
 
 export const UserModel = Mongoose.model("Users", UserSchema);
