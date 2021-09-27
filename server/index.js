@@ -16,10 +16,10 @@ import Auth from "./API/Auth";
 import Restaurant from "./API/Restaurant";
 import Food from "./API/Food";
 import Image from "./API/Image";
-import Order from "./API/orders";
-import Reviews from "./API/reviews";
+import Order from "./API/Orders";
+import Reviews from "./API/Reviews";
 import User from "./API/User";
-import Menu from "./API/menu";
+import Menu from "./API/Menu";
 import MailService from "./API/Mail";
 import Payments from "./API/Payments";
 
