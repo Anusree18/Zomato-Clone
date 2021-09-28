@@ -6,7 +6,7 @@ import passport from "passport";
 import { FoodModel } from "../../database/allModels";
 
 // Validation
-import { ValidateRestaurantId, Validatecategory } from "../../validation/food";
+import { ValidateRestaurantId, Validatecategory } from "../../Validation/food";
 
 const Router = express.Router();
 

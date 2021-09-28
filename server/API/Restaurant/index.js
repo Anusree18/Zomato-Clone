@@ -9,8 +9,8 @@ import { RestaurantModel } from "../../database/allModels";
 import {
   ValidateRestaurantCity,
   ValidateRestaurantSearchString,
-} from "../../validation/restaurant";
-import { ValidateRestaurantId } from "../../validation/food";
+} from "../../Validation/restaurant";
+import { ValidateRestaurantId } from "../../Validation/food";
 
 const Router = express.Router();
 
