@@ -3,7 +3,6 @@ import { MdContentCopy } from "react-icons/md";
 import { FaDirections } from "react-icons/fa";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
-//[12.988134202889283, 77.59405893120281]
 const Mapview = (props) => {
   return (
     <>
