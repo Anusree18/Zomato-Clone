@@ -1,0 +1,22 @@
+FROM node:alpine
+
+WORKDIR /app
+COPY ./package.json ./
+RUN npm install
+COPY . .
+
+
+ENV MONGO_URL=mongodb+srv://anusree:reset@123@cluster0.aijzs.mongodb.net/zomato?retryWrites=true&w=majority
+ENV GOOGLE_CLIENT_ID=1034535144634-46d60n78o9aftq2vmh3d8ra5e7d1ddf7.apps.googleusercontent.com
+ENV GOOGLE_CLIENT_SECRET=oakqK9uzk1DoulLyRQwbNneg
+ENV MAILGUN__DOMAIN=sandbox3bb7636c9a0947cdaa33baec4a78eda4.mailgun.org?
+ENV MAILGUN__API__KEY=edf7af5b9122ccde75e08ea23b3c3d43-dbdfb8ff-f1bc81b8
+ENV RZR_PAY_ID=rzp_test_gSutAukCBUE8Sb
+ENV RZR_PAY_SECRET=sgwFp0yCZAJRERSukgN5zXwX
+ENV NODE_ENV=production
+ENV PORT=4000
+
+RUN npm run build
+
+
+CMD ["npm", "run", "start"]
